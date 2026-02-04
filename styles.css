@@ -1,9 +1,29 @@
 header {
     background-color: blue;
+    height:320px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    position:absolute;
+    left:10px;
+    top:0px;
+}
+
+.content {
+    margin:10px;
+}
+
+.anderepaginaknop {
+    font-size: 30px;
 }
 
 header h1 {
     margin:0;
+    font-size: 300px;
+    z-index: 100;
 }
 
 body {
