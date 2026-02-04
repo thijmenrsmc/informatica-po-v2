@@ -1,5 +1,10 @@
+* {
+    text-decoration: none;
+    color:black;
+}
+
 header {
-    background-color: blue;
+    background-color: #ff2;
     height:320px;
     display:flex;
     align-items: center;
@@ -13,11 +18,20 @@ header img {
 }
 
 .content {
-    margin:10px;
+    margin:30px;
 }
 
 .anderepaginaknop {
+    border: 1px solid black;
+    border-radius: 15px;
     font-size: 30px;
+    padding: 5px;
+}
+
+.citation {
+    background-color: #f0f0f0;
+    padding:10px;
+    border-radius: 10px;
 }
 
 header h1 {
