@@ -3,18 +3,29 @@
     color:black;
 }
 
+body {
+    margin:0;
+    font-family: "Roboto";
+}
+
 header {
-    background-color: #ff2;
-    height:320px;
+    background-color: rgb(255, 50, 50);
+    height:50vh;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
+header h1 {
+    margin:0;
+    z-index: 100;
+}
+
 header img {
     position:absolute;
     left:10px;
-    top:0px;
+    top:2.5vh;
+    height: 45%;
 }
 
 .content {
@@ -24,24 +35,14 @@ header img {
 .anderepaginaknop {
     border: 1px solid black;
     border-radius: 15px;
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px;
+    padding-right: 10px;
 }
 
-.citation {
-    background-color: #f0f0f0;
-    padding:10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    margin:0;
-    font-size: 300px;
-    z-index: 100;
-}
-
-body {
-    margin:0;
-    font-family: 'Courier New', Courier, monospace;
+footer {
+    height:50px;
+    background-color: rgb(255,255,50);
+    display:flex;
+    justify-content: center;
 }

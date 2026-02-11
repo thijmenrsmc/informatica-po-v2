@@ -4,16 +4,43 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="afbeeldingen/appel-logo.jpg">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@450&display=swap" rel="stylesheet">
+        <title>Home - APPELS</title>
+        <style>
+            .home-item {
+                margin-bottom:30px;
+                padding: 30px;
+                border: 3px dotted black;
+                border-radius: 50px;
+            }
+
+            .home-item h2 {
+                margin-top: 0px;
+            }
+        </style>
     </head>
     <header>
-        <h1>APPELS</h1>
-        <img src="afbeeldingen/appel-logo.jpg" width="300" height="300">
+        <h1 style="font-size: clamp(10px, 40vh, 280px);">APPELS</h1>
+        <img style="top: -5px; left: -10px" src="afbeeldingen/appel-logo.jpg">
     </header>
     <body>
         <div class="content">
-            <h2>Hoe smaken ze eigenlijk?</h2>
-            <p>Hieronder hebben we een pagina waarin we onze mening geven over de smaak van appels.</p>
-            <a class="anderepaginaknop" href="Boaz.html">De <i>smaak</i> van <strong>APPELS</strong></a>
+            <div class="home-item">
+                <h2>Hoe smaken ze eigenlijk?</h2>
+                <p>Hieronder hebben we een pagina waarin we onze goed onderbouwde, krachtige mening geven over de smaak van appels. Hiervoor vragen we de appel-professional Dr. Appèl van der Knap om zijn professionele mening.</p>
+                <a class="anderepaginaknop" href="smaak.html"><i>de <strong>smaak</strong> van <strong>APPELS   </strong></i></a>
+            </div>
+            <div class="home-item">
+                <h2>Hoe smaken ze eigenlijk?</h2>
+                <p>Hieronder hebben we een pagina waarin we onze goed onderbouwde, krachtige mening geven over de smaak van appels. Hiervoor vragen we de appel-professional Dr. Appèl van der Knap om zijn professionele mening.</p>
+                <a class="anderepaginaknop" href="smaak.html"><i>de <strong>smaak</strong> van <strong>APPELS   </strong></i></a>
+            </div>
         </div>
     </body>
+    <footer>
+        <p>© <script>document.write(new Date().getFullYear());</script> Appels, Inc.</p>
+    </footer>
 </html>
