@@ -24,7 +24,6 @@ header h1 {
 header img {
     position:absolute;
     left:10px;
-    top:2.5vh;
     height: clamp(100px, 45%, 300px);
 }
 
