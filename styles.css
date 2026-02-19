@@ -1,4 +1,5 @@
 * {
+    /* Geen lijntje onder links, links krijgen geen kleur (blauw / paars) */
     text-decoration: none;
     color:black;
 }
@@ -9,8 +10,10 @@ body {
 }
 
 header {
-    background-color: rgb(255, 50, 50);
-    height:50vh;
+    background-color: rgb(235, 50, 50);
+    /* De hoogte van de header wordt bepaald op basis van de paginabreedte; De tekst en afbeeldingen schalen mee (minimum van 100px zorgt dat tekst nooit buiten de header komt) */
+    height: clamp(100px, 12.5vw, calc(infinity * 1px));
+    /* Tekst centreren */
     display:flex;
     align-items: center;
     justify-content: center;
@@ -18,19 +21,20 @@ header {
 
 header h1 {
     margin:0;
-    z-index: 100;
+    /* Zorgt ervoor dat de tekst altijd boven de afbeelding(en) staat */
+    z-index: calc(infinity);
 }
 
 header img {
     position:absolute;
-    left:10px;
-    height: clamp(100px, 45%, 300px);
 }
 
+/* Alles op een pagina dat niet de header / footer is krijgt een margin van 30px. Als je dit in de body zet krijgt de hele pagina (ook header en footer ookal staan die er niet in) 30px marge en dat is natuurlijk niet de bedoeling */
 .content {
     margin:30px;
 }
 
+/* Custom knop gemaakt van een link */
 .anderepaginaknop {
     border: 1px solid black;
     border-radius: 15px;
@@ -41,7 +45,7 @@ header img {
 
 footer {
     height:50px;
-    background-color: rgb(255,255,50);
+    background-color: rgb(250,250,50);
     display:flex;
     justify-content: center;
 }

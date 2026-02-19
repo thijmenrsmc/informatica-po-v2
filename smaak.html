@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+
 <html>
     <head>
-
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="afbeeldingen/appel-logo.jpg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Roboto -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@450&display=swap" rel="stylesheet">
+        <!-- Playfair Display voor de inleiding-->
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
         <title>SMAAK - APPELS</title>
         <style>
@@ -16,15 +18,17 @@
                 border-radius: 10px;
                 margin-bottom: 20px;
             }
+
             .citation p {
                 margin:8px;
             }
         </style>
     </head>
     <header>
-        <img style="right: -20px; left:auto; width: clamp(100px, 32vw, 440px); height:auto;" src="afbeeldingen/appels-2.webp">
-        <h1 style="font-size: clamp(30px, 4vw, 280px);float:left;padding-left:10px;">Appels: alles wat je moet weten over&nbsp</h1>
-        <h1 style="font-size: clamp(30px, 4vw, 280px);float:right;padding-right:10px"><i style="color: rgb(245, 245, 245)">de&nbsp;smaak</i></h1>
+        <img style="right: -1vw; width: 17vw;" src="afbeeldingen/appels-2.webp">
+        <!-- De titel bestaat uit 2 delen: 1 in het wit en 1 in het zwart -->
+        <h1 style="font-size: clamp(30px, 4vw, 280px);padding-left:10px;">Appels: alles wat je moet weten over&nbsp</h1>
+        <h1 style="font-size: clamp(30px, 4vw, 280px);padding-right:10px"><i style="color: rgb(245, 245, 245)">de&nbsp;smaak</i></h1>
     </header>
     <body>
         <div class="content">
@@ -59,6 +63,7 @@
         </div>
     </body>
     <footer>
+        <!-- Haalt automatisch het huidige jaar op en zet dat in de footer. Misschien een klein beetje overkill, maar het werkt -->
         <p>© <script>document.write(new Date().getFullYear());</script> Appels, Inc.</p>
     </footer>
 </html>
