@@ -25,6 +25,7 @@ header h1 {
     z-index: calc(infinity);
 }
 
+/* Nu position:absolute zorgt ervoor dat je bijv. right: 30px kan doen. Gebruikt om de afbeeldingen in de header te positioneren. */ 
 header img {
     position:absolute;
 }
